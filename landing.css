@@ -1,0 +1,87 @@
+html {
+  background-image: url(images/landscapeHD.png);
+  background-size: contain;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 90%;
+}
+
+body > * {
+  font-size: 150%;
+}
+
+.title {
+  position: absolute;
+  top: 5%;
+  left: 32.5%;
+  height: 9.4%;
+}
+
+.welcome-screen {
+  font-family: 'Permanent Marker', cursive;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 24%;
+  width: 43%;
+  position: absolute;
+  top: 38%;
+  left: 29%;
+  border: 3px solid red;
+  background-color: yellow;
+  color: red;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.rules, .continue {
+  font-family: 'Permanent Marker', cursive;
+  background: yellow;
+  color: red;
+  font-size: 150%;
+  text-align: center;
+  border: 3px solid red;
+  position: absolute;
+  top: 66%;
+  left: 37.6%;
+  width: 25%;
+  border-radius: 78px 78px;
+}
+
+#continue {
+  top: 73%;
+  text-decoration: none;
+}
+
+.modal-button {
+  background: yellow;
+  color: red;
+  border: 2px solid red;
+  border-radius: 31% 7%;
+
+}
+
+.modal-body {
+  font-family: 'Permanent Marker', cursive;
+  background: yellow;
+  color: red;
+  border: 3px solid red;
+  text-align: center;
+  font-size: 110%;
+}
+
+
+@media(max-width: 700px) {
+  .welcome-screen {
+    font-size: 10px;
+  }
+  .rules, .continue {
+    font-size: 100%;
+  }
+  #continue {
+    top: 75%;
+  }
+  .modal-body {
+    font-size: 30%;
+  }
+}

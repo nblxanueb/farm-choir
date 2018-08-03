@@ -1,0 +1,270 @@
+html {
+  background-image: url(images/landscapeHD.png);
+  background-size: contain;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 90%;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.tooltip {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  /* font-size: 1300%; */
+  font-size: 150%;
+  top: 3%;
+  left: 3%;
+  background: transparent;
+  border: none;
+  color: red;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 750%;
+  background-color: yellow;
+  color: red;
+  font-size: 40%;
+  text-align: center;
+  border: 3px solid red;
+  border-radius: 6px;
+  padding-left: 31%;
+  position: absolute;
+  top: 15%;
+  left: 125%;
+  border-radius: 800px 15px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.images > * {
+  position: absolute;
+}
+
+.images :hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 2;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  auto { transform: translate(-1px, -2px) rotate(-2deg); }
+  20% { transform: translate(-3px, 0px) rotate(2deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(2deg); }
+  50% { transform: translate(-1px, 2px) rotate(-2deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-2deg); }
+  80% { transform: translate(-1px, -1px) rotate(2deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-2deg); }
+}
+
+.nameUser {
+  background-color: yellow;
+  color: red;
+  border: 3px solid red;
+  position: absolute;
+  width: 15%;
+  height: 5%;
+  top: 86%;
+  left: 18%;
+  border: 3px solid red;
+  border-radius: 900px 104px;
+  /* font-size: 700%; */
+  font-size: 150%;
+  text-align: center;
+}
+
+.try-again, .next {
+  background-color: transparent;
+  color: transparent;
+  position: absolute;
+  width: 9%;
+  top: 14.8%;
+  font-size: 100%;
+  border: none;
+  border-radius: 339px 59px;
+  width: 14%;
+  left: 35.5%;
+}
+
+.reset {
+  width: 4%;
+  position: absolute;
+  top: 91.8%;
+  left: 49%;
+}
+
+#try-again {
+  position: absolute;
+  left: 49.5%;
+  top: 14.8%;
+  width: 16%;
+}
+
+.button-enabled {
+    font-family: 'Permanent Marker', cursive;
+    background-color: yellow;
+    color: red;
+    border: 3px solid red;
+}
+
+.title {
+  position: absolute;
+  top: 5%;
+  left: 32.5%;
+  height: 9.4%;
+}
+
+.sound {
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  height: 15%;
+}
+
+.question {
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  height: 7%;
+}
+
+.sound-playing {
+  transform: scale(1.5);
+}
+
+.bird {
+  top: 10%;
+  left: 27%;
+  height: 8%;
+}
+
+#bird2 {
+  top: 72%;
+  left: 8%;
+  height: 10%;
+}
+
+.cat {
+  top: 63%;
+  left: 58%;
+  height: 15%;
+}
+
+.chicken {
+  top: 78%;
+  left: 63%;
+  height: 14%;
+}
+
+#chickens {
+  top: 70%;
+  left: 72%;
+  height: 18%;
+}
+
+.cow {
+  top: 54%;
+  left: 77%;
+  height: 18%;
+}
+
+#cow2 {
+  top: 47%;
+  left: 64%;
+  height: 20%;
+}
+
+.dog {
+  top: 37%;
+  left: 50.3%;
+  height: 15%;
+}
+
+.duck {
+  top: 78%;
+  left: 52%;
+  height: 13%;
+}
+
+.horse {
+  top: 32.5%;
+  left: 77%;
+  height: 20%;
+}
+
+.pig {
+  top: 65%;
+  left: 43%;
+  height: 15%;
+}
+
+.rooster {
+  top: 67%;
+  left: 89%;
+  height: 18%;
+}
+
+.sheep {
+  top: 52%;
+  left: 32%;
+  height: 20%;
+}
+
+#sheep2 {
+  top: 55%;
+  left: 15%;
+  height: 15%;
+}
+
+.score-table {
+  display: grid;
+  grid-template-columns: 44% 10% 28% 4%;
+  height: 5%;
+  width: 27%;
+  position: absolute;
+  top: 92%;
+  left: 18%;
+  border: 3px solid red;
+  padding-left: 2.9%;
+  padding-top: 0.8%;
+  padding-right: -0.4%;
+  background-color: yellow;
+  color: red;
+  font-size: 135%;
+  border-radius: 900px 104px;
+}
+
+@media(max-width: 700px) {
+  .try-again, .next {
+    font-size: 10px;
+    border: none;
+    border-radius: 40px;
+    top: 14.8%;
+    width: 14%;
+    left: 35%;
+    border-radius: 339px 59px;
+  }
+  #try-again {
+    left: 49.5%;
+  }
+  .score-table {
+    border: 1px solid red;
+    font-size: 1em;
+  }
+  .tooltip {
+    font-size: 100%;
+  }
+  .nameUser {
+    font-size: 100%;
+    border: 1px solid red;
+  }
+  .score-table {
+    font-size: 80%;
+  }
+}
