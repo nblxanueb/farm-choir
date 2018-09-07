@@ -71,17 +71,43 @@ body > * {
 }
 
 
-@media(max-width: 700px) {
+@media(max-width: 640px) {
+  html {
+    background-image: url(images/landscapeVertical.png)
+  }
+  .title, .welcome-screen, .rules, .continue, .modal-body {
+    transform: rotate(0.25turn);
+  }
+  .title {
+  top: 51%;
+  left: 71.5%;
+  height: 6.4%;
+}
   .welcome-screen {
-    font-size: 10px;
+    top: 40%;
+    left: 55%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border: 1px solid red;
   }
   .rules, .continue {
-    font-size: 100%;
+    border: 1px solid red;
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 20rem;
+    top: 50%;
+    left: 22%;
   }
   #continue {
-    top: 75%;
+    top: 50%;
+    left: 12%;
   }
   .modal-body {
-    font-size: 30%;
+    font-size: 1rem;
+    border: 1px solid red;
+    position: absolute;
+    padding: 15px;
+    top: 20rem;
+    left: 10rem;
   }
 }
