@@ -5,14 +5,13 @@ html {
   background-size: cover;
   width: 100%;
   height: 90%;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
 }
 
 .tooltip {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   position: absolute;
-  /* font-size: 1300%; */
-  font-size: 150%;
+  font-size: 2rem;
   top: 3%;
   left: 3%;
   background: transparent;
@@ -22,22 +21,22 @@ html {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 750%;
+  width: 15rem;
+  line-height: 2rem;
   background-color: yellow;
   color: red;
-  font-size: 40%;
+  font-size: 1rem;
   text-align: center;
-  border: 3px solid red;
+  border: 1px solid red;
   border-radius: 6px;
-  padding-left: 31%;
   position: absolute;
-  top: 15%;
-  left: 125%;
-  border-radius: 800px 15px;
+  top: 0.5rem;
+  left: 2rem;
+  border-radius: 10rem 3rem;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
 .images > * {
@@ -50,46 +49,71 @@ html {
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  auto { transform: translate(-1px, -2px) rotate(-2deg); }
-  20% { transform: translate(-3px, 0px) rotate(2deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(2deg); }
-  50% { transform: translate(-1px, 2px) rotate(-2deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-2deg); }
-  80% { transform: translate(-1px, -1px) rotate(2deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-2deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  auto {
+    transform: translate(-1px, -2px) rotate(-2deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(2deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(2deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-2deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-2deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(2deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-2deg);
+  }
 }
 
 .nameUser {
   background-color: yellow;
   color: red;
-  border: 3px solid red;
+  border: 1px solid red;
   position: absolute;
-  width: 15%;
-  height: 5%;
+  width: auto;
+  height: 2.5rem;
   top: 86%;
   left: 18%;
-  border: 3px solid red;
-  border-radius: 900px 104px;
-  /* font-size: 700%; */
-  font-size: 150%;
+  border: 1px solid red;
+  border-radius: 25rem 3rem;
+  font-size: 1.5rem;
   text-align: center;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.try-again, .next {
+.try-again,
+.next {
   background-color: transparent;
   color: transparent;
   position: absolute;
-  width: 9%;
-  top: 14.8%;
-  font-size: 100%;
+  left: 28rem;
+  top: 6.5rem;
+  width: 10rem;
+  font-size: 1rem;
+  line-height: 2rem;
   border: none;
-  border-radius: 339px 59px;
-  width: 14%;
-  left: 35.5%;
+  border-radius: 25rem 3rem;
 }
 
 .reset {
@@ -101,16 +125,16 @@ html {
 
 #try-again {
   position: absolute;
-  left: 49.5%;
-  top: 14.8%;
-  width: 16%;
+  left: 40rem;
+  top: 6.5rem;
+  width: 10rem;
 }
 
 .button-enabled {
-    font-family: 'Permanent Marker', cursive;
-    background-color: yellow;
-    color: red;
-    border: 3px solid red;
+  font-family: "Permanent Marker", cursive;
+  background-color: yellow;
+  color: red;
+  border: 1px solid red;
 }
 
 .title {
@@ -226,25 +250,31 @@ html {
   display: grid;
   grid-template-columns: 44% 10% 28% 4%;
   height: 5%;
-  width: 27%;
+  width: 18rem;
   position: absolute;
   top: 92%;
   left: 18%;
-  border: 3px solid red;
+  border: 1px solid red;
   padding-left: 2.9%;
   padding-top: 0.8%;
   padding-right: -0.4%;
   background-color: yellow;
   color: red;
-  font-size: 135%;
+  font-size: 1.5rem;
   border-radius: 900px 104px;
 }
 
 @media (max-width: 640px) {
   html {
-    background-image: url(images/landscapeVertical.png)
+    background-image: url(images/landscapeVertical.png);
   }
-  .title, .sound, .nameUser, .score-table, button, #reset, .images > * {
+  .title,
+  .sound,
+  .nameUser,
+  .score-table,
+  button,
+  #reset,
+  .images > * {
     transform: rotate(0.25turn);
   }
   .title {
@@ -330,12 +360,18 @@ html {
     height: 10%;
   }
   button.tooltip {
-  top: 4%;
-  left: 105%;
-  font-size: 2rem;
+    top: 4%;
+    left: 105%;
+    font-size: 2rem;
   }
-
-  .try-again, .next {
+  .reset {
+    width: 8%;
+    position: absolute;
+    top: 41%;
+    left: 18%;
+  }
+  .try-again,
+  .next {
     font-size: 10px;
     border: none;
     border-radius: 40px;
@@ -344,6 +380,7 @@ html {
     left: 35%;
     border-radius: 339px 59px;
   }
+
   #try-again {
     left: 49.5%;
   }
