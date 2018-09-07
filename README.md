@@ -1,5 +1,7 @@
-# animal-choir
-match sounds game
+# ANIMAL CHOIR
+Animal Choir is an interactive sound match game for kids.
+
+On the landing page users are prompted to enter their username in order to play the game. 
 
 The user will hear a sample audio file containing sounds of animals in random order.
 The user must click on each animal in the right order to proceed to the next round. 
