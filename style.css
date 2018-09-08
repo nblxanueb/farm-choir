@@ -380,9 +380,14 @@ html {
     left: 35%;
     border-radius: 339px 59px;
   }
-
+  .next {
+    top: 38.8%;
+    left: 86%;
+    width: 6rem;
+  }
   #try-again {
-    left: 49.5%;
+    left: 78%;
+    top: 62%;
   }
   .score-table {
     border: 1px solid red;
@@ -395,10 +400,9 @@ html {
     font-size: 1rem;
     line-height: 2rem;
     border: 1px solid red;
-    top: 26%;
-    width: 10rem;
-    left: 0%;
-  }
+    top: 18.7%;
+    left: 12%;
+    }
   .score-table {
     font-size: 1rem;
     width: 14rem;

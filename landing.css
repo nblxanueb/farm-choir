@@ -75,29 +75,28 @@ body > * {
     transform: rotate(0.25turn);
   }
   .title {
-    top: 51%;
-    left: 71.5%;
-    height: 6.4%;
+    top: 46%;
+    left: 56.5%;
+    height: 5.4%;
   }
   .welcome-screen {
-    top: 40%;
-    left: 55%;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    border: 1px solid red;
+    top: 39%;
+    left: 6%;
+    font-size: 1.5rem;
   }
   .rules,
   .continue {
-    border: 1px solid red;
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
     width: 20rem;
     top: 50%;
-    left: 22%;
+    left: 2%;
   }
   #continue {
     top: 50%;
-    left: 12%;
+    left: -8%;
+  }
+  .modal.in, .modal-dialog {
+    transform: translate(-8rem,0);
   }
   .modal-body {
     font-size: 1rem;
